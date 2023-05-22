@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="zaklad.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@300&family=Roboto:wght@100;300&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="menu">
+
+    <nav class="navbar">
+
+      <a class="nav-nadpis" href="index.html">REMONSTAV</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html #uvod" class="nav-links ">Úvod</a>
+        </li>
+        <li class="nav-item">
+          <a href="onas/onas.html" class="nav-links">O nás</a>
+        </li>
+        <li class="nav-item krik">
+          <a href="index.html#ponuka" class="nav-links">Ponuka ^</a>
+          <ul class="dropdown-content">
+            <li><a href="podstranky/sadrokar.html">Sadrokar. p.</a></li><br>
+            <li><a href="podstranky/dlazby.html">Z. dlažby</a></li><br>
+            <li><a href="podstranky/malovanie.html">Maľovanie</a></li><br>
+            <li><a href="podstranky/domi.html">Stavba domov</a></li><br>
+            <li><a href="podstranky/rekon.html">Rekonštrukcie</a></li><br>
+            <li><a href="podstranky/zatepl.html">Zatepľovanie</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#naseprace" class="nav-links">Referencie</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-links">Kontakt</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <script>
+      const dropdown = document.querySelector('.krik');
+      const dropdownContent = document.querySelector('.dropdown-content');
+
+      dropdown.addEventListener('mouseleave', function () {
+        if (window.innerWidth >= 1200) {
+          dropdownContent.classList.add('active');
+          setTimeout(function () {
+            dropdownContent.classList.remove('active');
+          }, 500); // Zmena požadovanej doby ponechania rozbaleného stavu
+        }
+      });
+
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      })
+
+      document.querySelectorAll(".nav-links").forEach(n => n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }))
+
+
+
+    </script>
+  </header>
+
+  <div id="telo">
+    <div class="uvod" id="uvod">
+      <div class="wave-image">
+        <div class="uvod-obsah">
+          <div class="uvod-nadpis">Remonstav</div>
+          <div class="uvod-podnadpis">vaša prvá voľba pri stavaní príbytku</div>
+        </div>
+      </div>
+    </div>
+    <div class="poduvod">
+      <div class="poduvod-inf">
+        <div class="poduvod-nadpis">Realizujeme stavebné práce<br> v Prešovskom kraji</div>
+        <div class="poduvod-text">Stavby na klúč, rekonštrukcie, maľovanie <br> toto všetko a omnoho viac ponúka naša
+          firma.<br> Každému našemu projektu venujeme individuálnu pozornosť <br>a radi vyhovieme vašim osobným
+          požiadavkám a odporučíme vám to najlepšie. </div>
+        <button type="button" name="myButton" class="poduvod-button" onclick="redirectToPage('onas/onas.html')">Viac o našej firme</button>
+      </div>
+      <img src="obrázky/domov.jpg" alt="home" class="poduvod-obrazok">
+    </div>
+    <div class="ponuka" id="ponuka">
+      <div class="ponuka-uvod">
+        <div class="ponuka-nadpis">Činnosti našej firmy</div>
+        <div class="ponuka-podnadpis">Vyberte si z našej širokej ponuky stavebných prác a rekonštrukcií pre vašu stavbu
+        </div>
+      </div>
+      <div class="ponuka-grid">
+        <div class="ponuka-prvok">
+          <div class="ponuka-obsah" onclick="redirectToPage('podstranky/sadrokar.html')">
+            <div class="ponuka-obrazok"></div>
+            <div class="ponuka-obsah-nadpis">Sadrokartónové práce</div>
+            <div class="ponuka-obsah-text">Naše sadrokartonové práce zahŕňajú inštaláciu stien a stropov, izoláciu,
+              inštaláciu elektrických rozvodov, tvorbu dizajnových prvkov a opravy. Taktiež zakrývajú elektrické rozvody
+              a inštalujú osvetlenie. Vytvárajú estetické prvky, ako sú oblúky a kvádrové stropy. Opravujú trhliny a
+              poškodené panely. Sadrokartonové práce zohrávajú dôležitú úlohu pri vytváraní funkčných a esteticky
+              príjemných interiérov.</div>
+          </div>
+        </div>
+        <div class="ponuka-prvok">
+          <div class="ponuka-obsah" onclick="redirectToPage('podstranky/dlazby.html')">
+            <div class="ponuka-obrazok2"></div>
+            <div class="ponuka-obsah-nadpis">Zámkové dlažby</div>
+            <div class="ponuka-obsah-text">Zabezpečujeme kvalitné a precízne pokladanie dlažby pre rôzne typy
+              exteriérov. Naši skúsení pracovníci majú odborné znalosti a zručnosti potrebné na správne nastavenie a
+              zarovnanie dlažobných kociek, čím zabezpečujeme pevný a esteticky príjemný povrch. Nech už ide o chodníky,
+              terasy alebo parkovacie plochy, naša firma je tu, aby vám pomohla vytvoriť kvalitný a trvanlivý vonkajší
+              priestor s využitím zámkovej dlažby.</div>
+          </div>
+        </div>
+        <div class="ponuka-prvok">
+          <div class="ponuka-obsah" onclick="redirectToPage('podstranky/malovanie.html')">
+            <div class="ponuka-obrazok3"></div>
+            <div class="ponuka-obsah-nadpis">Maliarske práce</div>
+            <div class="ponuka-obsah-text">Bez ohľadu na to, či ide o maľovanie stien, stropov, drevených povrchov alebo
+              fasád, naša firma je tu, aby zabezpečila profesionálnu a esteticky príjemnú prácu. S dôrazom na detaily a
+              kvalitu, sme pripravení vytvoriť pre vás dokonalý a osviežujúci vzhľad vášho domova alebo komerčného
+              priestoru.</div>
+          </div>
+        </div>
+        <div class="ponuka-prvok">
+          <div class="ponuka-obsah" onclick="redirectToPage('podstranky/domi.html')">
+            <div class="ponuka-obrazok4"></div>
+            <div class="ponuka-obsah-nadpis">Dom na kľúč</div>
+            <div class="ponuka-obsah-text">Venujeme pozornosť všetkým detailom, aby sme vytvorili jedinečný a funkčný
+              dom, ktorý odráža vašu osobnosť a životný štýl. Snažíme sa zabezpečiť vysokú kvalitu, dodržiavanie
+              termínov a efektívne riadenie projektu. Dôverujte nám pri stavbe domu na kľúč a zažite proces, ktorý je
+              bezstarostný a výsledkom je vaša vysnívaná domácnosť, pripravená na nové dobrodružstvá.</div>
+          </div>
+        </div>
+        <div class="ponuka-prvok">
+          <div class="ponuka-obsah" onclick="redirectToPage('podstranky/rekon.html')">
+            <div class="ponuka-obrazok5"></div>
+            <div class="ponuka-obsah-nadpis">Rekonštrukcie</div>
+            <div class="ponuka-obsah-text">Poskytujeme komplexné služby, ktoré vám umožnia pretransformovať váš domov
+              alebo byt do podoby, o ktorej ste vždy snívali. S našimi skúsenými a kreatívnymi stavebnými odborníkmi sme
+              schopní zrealizovať všetky potrebné zmeny a úpravy, či už ide o interiérovú rekonštrukciu, prístavbu,
+              zmenu rozloženia alebo modernizáciu fasády.</div>
+          </div>
+
+        </div>
+        <div class="ponuka-prvok">
+          <div class="ponuka-obsah" onclick="redirectToPage('podstranky/zatepl.html')">
+            <div class="ponuka-obrazok6"></div>
+            <div class="ponuka-obsah-nadpis">Zatepľovanie</div>
+            <div class="ponuka-obsah-text">Naše komplexné služby zatepľovania, ktoré pomáhajú zlepšiť energetickú
+              účinnosť a komfort vášho domova alebo obchodného objektu. Zatepľovanie pomáha minimalizovať tepelné
+              straty, znižuje náklady na vykurovanie a chladenie a prispieva k ochrane životného prostredia. Bez ohľadu
+              na veľkosť budovy či materiály, naša firma je tu, aby vám pomohla zrealizovať zatepľovací projekt podľa
+              vašich požiadaviek.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="naseprace" id="naseprace">
+      <div class="prace-nadpis">Naše práce</div>
+      <div class="prace-podnadpis">Prezrite si niečo málo z našeho množstva realizovaných projektov</div>
+      <!--
+            <div class="nase-ukazka">
+              <div class="nase-prvok">
+                <div class="nase-prvok-obsah">
+
+                </div>
+              </div>
+              <div class="nase-prvok">
+                <div class="nase-prvok-obsah">
+                  
+                </div>
+              </div>
+              <div class="nase-prvok">
+                <div class="nase-prvok-obsah">
+                  
+                </div>
+              </div>
+              <div class="nase-prvok">
+                <div class="nase-prvok-obsah">
+                  
+                </div>
+              </div>
+            </div>
+          -->
+      <div class="container" data-aos="fade-right">
+        <div class="slider">
+          <div class="slide" id="first-slide" onclick="redirectToPage('firsten.jpeg')">
+            <div class="obraz-slide"></div>
+            <div class="nadpis-slide">Dom - Čizatice</div>
+            <div class="text-slide">Na tomto projekte sme pracovali 2 roky. Tento dom si prešiel kompletnou
+              rekonštrukciou.</div>
+
+
+          </div>
+          <div class="slide" id="first-slide" onclick="redirectToPage('firsten.jpeg')">
+            <div class="obraz-slide2"></div>
+            <div class="nadpis-slide">Maľovanie - Prešov</div>
+            <div class="text-slide">
+              Naša firma maľovala 200m2 interiéru v Prešove. Práce sme úspešne dokončili a interiér sme transformovali
+              do pôsobivého a esteticky príjemného vzhľadu. Zákazník bol veľmi spokojný s výsledkom našej práce.
+            </div>
+          </div>
+          <div class="slide" id="first-slide" onclick="redirectToPage('firsten.jpeg')">
+            <div class="obraz-slide3"></div>
+            <div class="nadpis-slide">Zatepľovanie - Čirč</div>
+            <div class="text-slide"> S našimi kvalitnými zatepľovacími prácami sme výrazne zvýšili energetickú účinnosť
+              budovy a zabezpečili lepší tepelný komfort pre obyvateľov</div>
+
+
+          </div>
+          <div class="slide" id="first-slide" onclick="redirectToPage('firsten.jpeg')">
+            <div class="obraz-slide4"></div>
+            <div class="nadpis-slide">Dlažba - Košice</div>
+            <div class="text-slide">Naša firma uskutočnila pokladanie zamkovej dlažby v Košiciach. Precízne sme
+              vytvorili kvalitný a esteticky pôsobivý povrch pre našich zákazníkov. S našimi zručnosťami a skúsenosťami
+              sme dosiahli pevnú a odolnú dlažbu, ktorá poskytuje dlhodobú hodnotu.</div>
+
+
+          </div>
+          <div class="slide" id="first-slide" onclick="redirectToPage('firsten.jpeg')">
+            <div class="obraz-slide"></div>
+            <div class="nadpis-slide">Dom - Čizatice</div>
+            <div class="text-slide">Na tomto projekte sme pracovali 2 roky. Tento dom si prešiel kompletnou
+              rekonštrukciou.</div>
+
+
+          </div>
+          <div class="slide" id="first-slide" onclick="redirectToPage('firsten.jpeg')">
+            <div class="obraz-slide"></div>
+            <div class="nadpis-slide">Dom - Čizatice</div>
+            <div class="text-slide">Na tomto projekte sme pracovali 2 roky. Tento dom si prešiel kompletnou
+              rekonštrukciou.</div>
+
+
+          </div>
+          <div class="slide" id="first-slide" onclick="redirectToPage('firsten.jpeg')">
+            <div class="obraz-slide"></div>
+            <div class="nadpis-slide">Dom - Čizatice</div>
+            <div class="text-slide">Na tomto projekte sme pracovali 2 roky. Tento dom si prešiel kompletnou
+              rekonštrukciou.</div>
+
+
+          </div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      <script>
+        var slider = document.querySelector('.slider');
+        var slides = document.querySelectorAll('.slide');
+        var prevBtn = document.querySelector('.prev');
+        var nextBtn = document.querySelector('.next');
+        var slideWidth = slides[0].clientWidth;
+        var currentSlide = 0;
+
+        // inicializácia slideru
+        function init() {
+          slider.style.transform = 'translateX(' + (-slideWidth * currentSlide) + 'px)';
+          prevBtn.addEventListener('click', prevSlide);
+          nextBtn.addEventListener('click', nextSlide);
+        }
+
+        // prechod na predchádzajúci slide
+        function prevSlide() {
+          if (currentSlide === 0) {
+            currentSlide = slides.length - 1;
+          } else {
+            currentSlide--;
+          }
+          slider.style.transform = 'translateX(' + (-slideWidth * currentSlide) + 'px)';
+        }
+
+        // prechod na nasledujúci slide
+        function nextSlide() {
+          if (currentSlide === slides.length - 1) {
+            currentSlide = 0;
+          } else {
+            currentSlide++;
+          }
+          slider.style.transform = 'translateX(' + (-slideWidth * currentSlide) + 'px)';
+        }
+        init();
+      </script>
+
+
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="footer-nadpis">REMONSTAV</div>
+    <div class="footer-main">
+      <div class="footer-info">
+        <div class="footer-info-tel">
+          <h2>Kontaktné údaje</h2><br>0905 117 036<br>marbenstav@gmail.com
+        </div>
+        <div class="footer-info-adr">
+          <h2>Sídlo firmy</h2><br>Lemešany 560<br>082 03 Lemešany
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h2>Navigácia</h2>
+        <br>
+        <a href="#Uvod" class="footer-link">Úvod</a>
+        <br>
+        <a href="#vyhody" class="footer-link">Výhody</a>
+        <br>
+        <a href="#ponuka" class="footer-link">Ponuka</a>
+        <br>
+        <a href="#onas" class="footer-link">O nás</a>
+        <br>
+        <a href="#onas" class="footer-link">Kontakt</a>
+        <br>
+        <a href="#onas" class="footer-link">Dotacie</a>
+      </div>
+      <div class="footer-tlacidlo"><button id="footer-citko">Zavolaj nám</button>
+      </div>
+    </div>
+
+    <div class="copy-r"> © 2022 by Jakub Petrila</div>
+
+  </div>
+</body>
+<script src="zaklad.js"></script>
+<script>
+  function redirectToPage(url) {
+    window.location.href = url;
+  }
+</script>
+<script>
+  var images = [
+    "url(obrázky/nahradenlepsi.jpeg)",
+    "url(obrázky/uvodtretenlepsi.jpeg)",
+    "url(obrázky/firstenlepsi.jpeg)"
+  ];
+
+  var currentIndex = 0;
+  var waveImage = document.querySelector(".wave-image");
+
+  function changeImage() {
+    waveImage.style.backgroundImage = images[currentIndex];
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  setInterval(changeImage, 4000);
+</script>
+
+</html>

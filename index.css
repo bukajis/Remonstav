@@ -1,0 +1,1019 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  height: 80px;
+  background-color: rgba(96, 125, 139, 0.904);
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+
+  text-shadow: 0px 2px 10px black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.head-logo {
+  width: 4.5%;
+  height: 75px;
+  margin-left: 5%;
+}
+
+li {
+  list-style: none;
+}
+
+nav>a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+li>a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-nadpis {
+  font-size: 3rem;
+  transition: 0.7s ease;
+}
+
+.nav-nadpis:hover {
+  color: rgb(0, 0, 0);
+
+}
+
+.navbar {
+  font-size: 1.5rem;
+  z-index: 1000;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0px;
+  position: relative;
+  justify-content: right;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  z-index: 1000;
+  margin-left: 10%;
+}
+
+.nav-links {
+  text-decoration: none;
+  line-height: 16px;
+  transition: color 0.4s, padding 0.2 ease-in;
+  color: rgb(90, 247, 69);
+}
+
+.nav-links::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: black;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.6s, transform 0.4s ease-in-out;
+}
+
+#uvod::before {
+  width: 100%;
+}
+
+#onas::before {
+  width: 100%;
+}
+
+.nav-links:hover::before,
+.nav-links:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.nav-links:hover {
+  color: rgb(75, 231, 75);
+}
+
+.dropdown-content {
+  margin-top: -500px;
+  display: block;
+  position: absolute;
+  background-color: rgba(96, 125, 139, 0.904);
+  top: 100px;
+  z-index: 50;
+  transition: 0s;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: -1;
+  /* Move the dropdown-content behind the header */
+}
+
+.krik:hover .dropdown-content {
+  display: block;
+  margin-top: -45px;
+  z-index: -1;
+  z-index: 50;
+}
+
+.dropdown-content li {
+  display: block;
+  height: 35px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.dropdown-content li a {
+  height: 100%;
+  font-size: 20px;
+  z-index: 50;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: -1;
+}
+
+.nav-item {
+  height: 100%;
+  z-index: 50;
+
+}
+
+.krik:hover .dropdown-content,
+.dropdown-content.active {
+  display: block;
+  margin-top: -45px;
+  z-index: -1;
+}
+
+.dropdown:hover>a {
+  background-color: #ccc;
+}
+
+.dropdown-content li a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  z-index: 50;
+  background-color: rgb(0, 0, 0);
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.6s, transform 0.4s ease-in-out;
+}
+
+.dropdown-content a:hover::before,
+.dropdown-content a:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.dropdown-content a:hover {
+  color: rgb(200, 200, 200);
+}
+
+@media(max-width: 1500px) {
+  .nav-menu {
+    width: 45%;
+  }
+}
+
+.nav-links {
+  text-decoration: none;
+  line-height: 16px;
+  z-index: 1000;
+  transition: color 0.4s, padding 0.2 ease-in;
+  color: rgb(90, 247, 69);
+}
+
+.nav-links::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.6s, transform 0.4s ease-in-out;
+}
+
+.nav-links:hover::before,
+.nav-links:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+
+}
+
+.nav-links:hover {
+  color: rgb(200, 200, 200);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 40px;
+  margin: 8px auto;
+  height: 5px;
+  z-index: 500;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media(max-width: 1200px) {
+  .dropdown-content {
+    display: none;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(96, 125, 139, 0.0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: 0s;
+  }
+
+  .krik {
+    width: 100%;
+    height: 400px;
+    transition: 0s;
+  }
+
+  .krik:hover {
+    height: 160px;
+    transition: 0s;
+  }
+
+  .krik:hover .dropdown-content {
+    display: block;
+    transition: 0s;
+  }
+
+  .dropdown-content li {
+    display: block;
+    height: 33px;
+    text-align: left;
+    align-items: center;
+    transition: s;
+    justify-content: center;
+  }
+
+  .dropdown-content li a {
+    height: 100%;
+    font-size: 20px;
+    transition: 0s;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    transition: 0s;
+  }
+
+  .nav-item {
+    height: 100%;
+
+  }
+
+  .krik:hover .dropdown-content,
+  .dropdown-content.active {
+    display: block;
+    margin-top: 0;
+    transition: 0s;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -150%;
+    transition: 0s;
+    top: 80px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(96, 125, 139, 0.904);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 30px 0;
+    transition: 0s;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    width: 100%;
+    margin-left: 0px;
+    transition: 0s;
+    padding-left: 0px;
+  }
+
+  .nav-links::before {
+    content: "";
+    display: block;
+    position: absolute;
+    transition: 0s;
+    bottom: 0px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.4s, transform 0.2s ease-in-out;
+  }
+
+  #uvod::before {
+    width: 100%;
+    transition: 0.4s;
+  }
+
+  #onas::before {
+    width: 100%;
+    transition: 0.4s;
+  }
+}
+
+@media(max-width: 700px) {
+  .dropdown-content {
+    display: block;
+    position: relative;
+    background-color: rgba(96, 125, 139, 0.0);
+    top: 0px;
+    z-index: 100;
+    margin-top: 0;
+    width: 100%;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+
+  }
+
+  .krik {
+    width: 100%;
+    padding-bottom: 0px;
+    transition: 0s;
+    display: block;
+  }
+
+  .krik:hover {
+    height: 0px;
+    transition: 0s;
+    padding-bottom: 227px;
+  }
+
+  .krik:hover .dropdown-content,
+  .dropdown-content.active {
+    display: block;
+    transition: 0s;
+  }
+
+  .krik:hover .dropdown-content {
+    display: block;
+    transition: 0s;
+    margin-top: 0;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .krik:hover .dropdown-content,
+  .dropdown-content.active {
+    display: block;
+    margin-top: 0px;
+  }
+
+  .dropdown-content li {
+    display: block;
+    height: 33px;
+    text-align: left;
+    align-items: center;
+    transition: 0s;
+    justify-content: center;
+  }
+
+  .dropdown-content li a {
+    height: 100%;
+    font-size: 20px;
+    transition: 0s;
+  }
+
+  .nav-item {
+    height: 100%;
+
+  }
+}
+
+/*hlavička konči začína telo*/
+.uvod {
+  height: 600px;
+  width: 100%;
+}
+
+.wave-image {
+  position: relative;
+  background-image: url(obrázky/firstenlepsi.jpeg);
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.uvod-obsah {
+  opacity: 1.5;
+  color: rgba(0, 0, 0, 1.5);
+  width: 60%;
+  margin-left: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.uvod-nadpis {
+
+  opacity: 1.5;
+  height: 100px;
+  font-size: 6rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+
+}
+
+.uvod-podnadpis {
+
+  opacity: 1.5;
+  height: 100px;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+
+}
+
+.poduvod {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  background-color: rgb(243, 242, 242);
+}
+
+.poduvod-obrazok {
+  height: 70%;
+  margin-top: 75px;
+  width: 30%;
+}
+
+.poduvod-inf {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5%;
+}
+
+.poduvod-nadpis {
+  font-weight: 900;
+  font-size: 1.9rem;
+  color: #1f1f1f;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.poduvod-text {
+  font-size: 1.3rem;
+  color: #424242;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.poduvod-button {
+
+  font-size: 19px;
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 11px;
+  background-color: #FFC107;
+  padding: 15px 50px;
+  color: #333333;
+  cursor: pointer;
+  margin-top: 5%;
+
+}
+
+.poduvod-button:hover {
+  background-color: #607D8B;
+  animation: scale-up-center 0.6s ease-in-out both;
+}
+
+/*Tu začina ponuka*/
+.ponuka {
+  height: 2000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #696969;
+}
+
+.ponuka-uvod {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ponuka-nadpis {
+  height: 120px;
+  width: 100%;
+  text-align: center;
+  font-size: 3.8rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.ponuka-podnadpis {
+  height: 30px;
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.ponuka-grid {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 50% 50%;
+  height: 1800px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.ponuka-prvok {
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+}
+
+.ponuka-obsah {
+  width: 90%;
+  background-color: white;
+  height: 90%;
+  cursor: pointer;
+  box-shadow: 1px 16px 23px -4px rgba(0, 0, 0, 0.55);
+}
+
+.ponuka-obsah:hover {
+  background-color: rgb(96, 125, 139);
+}
+
+.ponuka-obrazok {
+  width: 100%;
+  background-image: url(obrázky/uvodtreten.jpeg);
+  height: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ponuka-obrazok2 {
+  width: 100%;
+  background-image: url(obrázky/dlazby.jpg);
+  height: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ponuka-obrazok3 {
+  width: 100%;
+  background-image: url(obrázky/malovanies.jpeg);
+  height: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ponuka-obrazok4 {
+  width: 100%;
+  background-image: url(obrázky/zaklady.jpg);
+  height: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ponuka-obrazok5 {
+  width: 100%;
+  background-image: url(obrázky/reconstraction.jpeg);
+  height: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ponuka-obrazok6 {
+  width: 100%;
+  background-image: url(obrázky/zateplovanie.jpg);
+  height: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ponuka-obsah-nadpis {
+  font-size: 2.3rem;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+  font-family: 'Montserrat', sans-serif;
+  height: 14%;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+}
+
+.ponuka-obsah-text {
+  font-size: 1.2rem;
+  height: 70%;
+  font-weight: 400;
+  width: 80%;
+  margin-top: 0%;
+  margin-left: 10%;
+  font-family: 'Montserrat', sans-serif;
+  height: 20%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+}
+
+/*Naše práce*/
+.naseprace {
+  height: 900px;
+  width: 100%;
+}
+
+.prace-nadpis {
+  width: 100%;
+  padding-top: 1%;
+  height: 9%;
+  font-size: 3.8rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.prace-podnadpis {
+  width: 100%;
+  text-align: center;
+  height: 10%;
+  padding-top: 2%;
+  font-size: 1.7rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*
+.nase-ukazka{
+  width: 100%;
+  height: 83%;
+  margin-top: 3%;
+  display: flex;
+}
+
+.nase-prvok{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+.nase-prvok-obsah{
+  height: 90%;
+  margin-top: 10%;
+  width: 80%;
+  background-color: #607D8B;
+}*/
+.container {
+  width: 500px;
+  justify-content: center;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  box-shadow: 0px 16px 42px -10px rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
+}
+
+.slider {
+  width: 500px;
+
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-shrink: 0;
+  cursor: pointer;
+  object-fit: cover;
+  background-color: #696969;
+}
+
+.slide:hover {
+  background-color: #FFC107;
+}
+
+.slide:hover .nadpis-slide {
+  background-color: #FFC107;
+  color: #1f1f1f;
+}
+
+.slide:hover .text-slide {
+  background-color: #FFC107;
+  color: #1f1f1f;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  padding: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.obraz-slide {
+  width: 100%;
+  height: 50%;
+  background-image: url(obrázky/domcek.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.obraz-slide2 {
+  width: 100%;
+  height: 50%;
+  background-image: url(obrázky/malovani.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.obraz-slide3 {
+  width: 100%;
+  height: 50%;
+  background-image: url(obrázky/zatepbyt.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.obraz-slide4 {
+  width: 100%;
+  height: 50%;
+  background-image: url(obrázky/pokladka.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nadpis-slide {
+  font-size: 3rem;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #696969;
+  color: white;
+}
+
+.text-slide {
+  color: white;
+  height: 35%;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #696969;
+}
+
+/* pata začiatok*/
+
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: #607D8B;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.footer-nadpis {
+  text-align: center;
+  height: 25%;
+  font-size: 3.1rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-shadow: 0px 2px 10px black;
+}
+
+.footer-main {
+  height: 70%;
+
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-info {
+  width: 40%;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0px 2px 10px black;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info-tel {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 50px;
+}
+
+.footer-info-adr {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 50px;
+}
+
+.footer-nav {
+  width: 20%;
+  margin-left: 20%;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 50px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0px 2px 10px black;
+}
+
+.footer-nav>a {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 2px;
+}
+
+.footer-link {
+  color: white;
+  font-size: 18px;
+  text-decoration: underline;
+  text-shadow: 0px 2px 10px black;
+}
+
+.footer-link:hover {
+  color: #03b450;
+  ;
+}
+
+.footer-nav>p {
+  margin-top: 40px;
+}
+
+.footer-tlacidlo {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#footer-citko {
+  height: 25%;
+  width: 90%;
+  background-color: #FFC107;
+  border-radius: 11px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+#footer-citko:hover {
+  background-color: #696969;
+}
+
+
+
+.copy-r {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+}
