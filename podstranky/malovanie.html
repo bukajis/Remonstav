@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMONSTAV | Maľovanie</title>
+    <link rel="icon" type="image/jpg" href="../R.jpg">
+    <link rel="stylesheet" href="ponuka.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="menu">
+ 
+        <nav class="navbar">
+   
+          <a class="nav-nadpis" href="../index.html">REMONSTAV</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="../index.html #uvod" class="nav-links ">Úvod</a>
+            </li>
+            <li class="nav-item">
+              <a href="../onas/onas.html" class="nav-links" >O nás</a>
+            </li>
+            <li class="nav-item krik">
+                <a href="../index.html#ponuka" class="nav-links">Ponuka ^</a>
+                <ul class="dropdown-content">
+                    <li><a href="sadrokar.html">Sadrokar. p.</a></li><br>
+                    <li><a href="dlazby.html">Z. dlažby</a></li><br>
+                    <li><a href="malovanie.html">Maľovanie</a></li><br>
+                    <li><a href="domi.html">Stavba domov</a></li><br>
+                    <li><a href="rekon.html">Rekonštrukcie</a></li><br>
+                    <li><a href="zatepl.html">Zatepľovanie</a></li>
+                </ul>
+              </li>
+            <li class="nav-item">
+                <a href="../index.html #naseprace" class="nav-links" >Referencie</a>
+              </li>
+            <li class="nav-item">
+              <a href="../kontakt/kontakt.html" class="nav-links" >Kontakt</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+          <script>
+            const dropdown = document.querySelector('.krik');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+dropdown.addEventListener('mouseleave', function() {
+  if (window.innerWidth >= 1200) {
+    dropdownContent.classList.add('active');
+    setTimeout(function() {
+      dropdownContent.classList.remove('active');
+    },750); // Zmena požadovanej doby ponechania rozbaleného stavu
+  }
+});
+
+const hamburger=document.querySelector(".hamburger");
+const navMenu=document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click",()=>{
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-links").forEach(n=>n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
+
+
+
+          </script>
+      </header>
+      
+      <div id="telo">
+        <div class="uvod-obsah">
+          <div class="pozadie-nadpis">
+            <div class="uvod-nadpis">Maliarske práce</div>
+          </div>
+            <div class="uvod-text">
+                Naše maliarske práce zahŕňajú prípravu povrchov, ako je očistenie, vyhladenie a prípadné opravy nepravidelností. Následne aplikujeme primer, aby sme zabezpečili lepšiu priľnavosť farby k povrchu. Využívame širokú paletu farieb a odtieňov, aby sme vyhoveli individuálnym preferenciám a potrebám našich klientov.
+
+Pri maliarskych prácach dbáme na kvalitu a precíznosť. Používame profesionálne nástroje a techniky, ako je váľkovanie, štetkovanie a striekanie farby. Sme odborníci v maľovaní stien, stropov, dverí, okien, zábradlí a ďalších povrchov. Okrem toho sme zruční v aplikácii špeciálnych efektov, ako je napríklad špongovanie, bielenie, patinovanie a šablónovanie.
+                <br>
+                <br>
+                Ceny našich služieb sa líšia podľa rôznych parametrov od zložitosti práce po nákladov na materiál. Informujte sa o cene telefonicky na čísle 0949 252 832 alebo nám napíšte na náš email info@remostav.sk.
+            </div>
+            <div class="buttons">
+            <button type="button" name="myButton" class="poduvod-button-email" onclick="redirectToPage('../kontakt/kontakt.html')">Napíšte nám!!!</button>
+            <button type="button" name="myButton" class="poduvod-button-tel"  onclick="volaj()">Zavolajte nám!!!</button>
+            <script>
+                function volaj() {
+                  window.location.href = "tel:091111111";
+                }
+            </script>
+            </div>
+
+        </div>
+        <div class="galeria">
+            <div class="gal-obr1" style="background-image:url(https://qualis.sk/wp-content/uploads/2020/06/malovanie-stien-scaled.jpg) ;"></div>
+            <div class="gal-obr2" style="background-image:url(https://stubau.sk/wp-content/uploads/2016/06/malovanie02.jpg) ;"></div>
+            <div class="gal-obr3" style="background-image: url(https://www.daibau.sk/showfile.php?id=48557) ;"></div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-nadpis">REMONSTAV</div>
+        <div class="footer-main">
+          <div class="footer-info">
+            <div class="footer-info-tel"><h2>Kontaktné údaje</h2><br>0905 117 036<br>marbenstav@gmail.com</div>
+            <div class="footer-info-adr"><h2>Sídlo firmy</h2><br>Lemešany 560<br>082 03 Lemešany</div> 
+          </div>
+          <div class="footer-nav">
+              <h2>Navigácia</h2>
+              <br>
+              <a href="#Uvod" class="footer-link">Úvod</a>
+              <br>
+              <a href="#vyhody" class="footer-link">Výhody</a>
+              <br>
+              <a href="#ponuka" class="footer-link">Ponuka</a>
+              <br>
+              <a href="#onas" class="footer-link">O nás</a>
+              <br>
+              <a href="#onas" class="footer-link">Kontakt</a>
+              <br>
+              <a href="#onas" class="footer-link">Dotacie</a>
+          </div>
+          <div class="footer-tlacidlo"><button id="footer-citko">Zavolaj nám</button>
+        </div>
+        </div>
+        
+        <div class="copy-r"> © 2022 by Jakub Petrila</div>
+    
+      </div>
+</body>
+<script>
+  function redirectToPage(url) {
+  window.location.href = url;
+}
+</script>
+
+</html>
