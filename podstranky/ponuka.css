@@ -412,7 +412,7 @@
 }
 .pozadie-nadpis{
   width: 100%;
-  
+  box-shadow: 0px 10px 40px 0px rgba(0,0,0,1);
   background-color: #696969;
   color: white;
   height: 20%;
@@ -429,10 +429,11 @@
 
 }
 .uvod-text{
-    margin-top: 2%;
+    margin-top: 2.5%;
     font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
     width: 90%;
+    height: 47%;
     margin-left: 5%;
 }
 .buttons{
@@ -451,7 +452,7 @@
     padding: 15px 50px;
     color:white;
     cursor: pointer;
-    margin-top:5%;
+    margin-top:3%;
     
   }
   .poduvod-button-tel{
