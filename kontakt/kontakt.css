@@ -551,6 +551,7 @@ li>a {
     background-color: #4c4c4c;
     width: 550px;
     height: 1000px;
+    box-shadow: inset 2px 0px 29px -1px rgba(0,0,0,0.61);
     z-index: 1;
     right: 0;
 }
