@@ -573,6 +573,7 @@ li>a {
   display: flex;
   flex-direction: column;
   background-color: #696969;
+  box-shadow: inset 2px 0px 29px -1px rgba(0,0,0,0.61);
 }
 
 .ponuka-uvod {
