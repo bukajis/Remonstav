@@ -482,12 +482,15 @@ li>a {
     font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
     height: 100px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #696969;
     color: white;
     text-shadow: 0px 2px 10px black;
+    z-index: 100;
+    box-shadow: 0px 10px 40px 0px rgba(0,0,0,1);
 }
 
 .main-kon {
@@ -550,7 +553,6 @@ li>a {
     height: 1000px;
     z-index: 1;
     right: 0;
-
 }
 .nadpis-prava{
     font-size: 3.5rem;
