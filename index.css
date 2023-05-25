@@ -715,7 +715,7 @@ li>a {
   display: flex;
   flex-direction: column;
   justify-content: start;
-
+  overflow: hidden;
 }
 
 /*Naše práce*/
