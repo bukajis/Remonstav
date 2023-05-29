@@ -136,7 +136,7 @@ S použitím vysoko kvalitného sadrokartónu a precíznej práce našich odborn
               <a href="../kontakt/kontakt.html" class="footer-link">Kontakt</a>
               <br>
             </div>
-            <div class="footer-tlacidlo"><button id="footer-citko">Zavolaj nám</button>
+            <div class="footer-tlacidlo"><button id="footer-citko" onclick="callNumber('+123456789')">Zavolaj nám</button>
             </div>
           </div>
         </div>
@@ -150,5 +150,9 @@ S použitím vysoko kvalitného sadrokartónu a precíznej práce našich odborn
   window.location.href = url;
 }
 </script>
-
+<script>
+  function callNumber(phoneNumber) {
+    window.location.href = 'tel:' + phoneNumber;
+  }
+</script>
 </html>

@@ -152,9 +152,10 @@ document.querySelectorAll(".nav-links").forEach(n=>n.addEventListener("click", (
               <a href="kontakt.html" class="footer-link">Kontakt</a>
               <br>
             </div>
-            <div class="footer-tlacidlo"><button id="footer-citko">Zavolaj nám</button>
+            <div class="footer-tlacidlo"><button id="footer-citko" onclick="callNumber('+123456789')">Zavolaj nám</button>
             </div>
           </div>
+        </div>
         
         <div class="copy-r"> © 2022 by Jakub Petrila</div>
     
@@ -165,5 +166,9 @@ document.querySelectorAll(".nav-links").forEach(n=>n.addEventListener("click", (
   window.location.href = url;
 }
 </script>
-
+<script>
+  function callNumber(phoneNumber) {
+    window.location.href = 'tel:' + phoneNumber;
+  }
+</script>
 </html>
