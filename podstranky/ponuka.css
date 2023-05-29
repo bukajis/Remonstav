@@ -405,6 +405,7 @@ li>a {
 
   .krik {
     width: 100%;
+
     padding-bottom: 0px;
     transition: 0s;
     display: block;
@@ -413,7 +414,7 @@ li>a {
   .krik:hover {
     height: 0px;
     transition: 0s;
-    padding-bottom: 160px;
+    padding-bottom: 230px;
   }
 
   .krik:hover .dropdown-content,
@@ -465,7 +466,7 @@ li>a {
 }
 
 .uvod-obsah {
-  margin-top: 5.4%;
+  margin-top: 80px;
   height: 29%;
   width: 100%;
   background-color: rgba(255, 255, 255, 1);
@@ -473,7 +474,7 @@ li>a {
 
 .pozadie-nadpis {
   width: 100%;
-  box-shadow: inset 2px 0px 29px -1px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 1);
   background-color: #696969;
   color: white;
   height: 20%;
@@ -496,7 +497,7 @@ li>a {
   font-size: 1.3rem;
   font-family: 'Montserrat', sans-serif;
   width: 90%;
-  height: 47%;
+  height: auto;
   margin-left: 5%;
 }
 
@@ -504,7 +505,7 @@ li>a {
   display: flex;
   justify-content: center;
   width: 100%;
-
+  margin-top: 3%;
 }
 
 .poduvod-button-email {
@@ -517,7 +518,7 @@ li>a {
   padding: 15px 50px;
   color: white;
   cursor: pointer;
-  margin-top: 3%;
+
 
 }
 
@@ -530,7 +531,6 @@ li>a {
   padding: 15px 50px;
   color: white;
   cursor: pointer;
-  margin-top: 5%;
 
 }
 
@@ -542,6 +542,7 @@ li>a {
 
   .buttons {
     justify-content: space-around;
+
   }
 
 }
@@ -590,6 +591,7 @@ li>a {
   height: 400px;
   background-color: #607D8B;
   z-index: 10000;
+  box-shadow: 0px 10px 39px 20px rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -636,6 +638,13 @@ li>a {
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   margin-top: 50px;
+}
+
+.flexim {
+  width: 40%;
+  display: flex;
+  margin-left: 20%;
+  justify-content: space-between;
 }
 
 .footer-nav {
@@ -705,6 +714,7 @@ li>a {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 4px;
 }
+
 /* ZLOMOVÁ SEKCIA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 @media(max-width: 1200px) {
@@ -786,16 +796,19 @@ li>a {
     font-size: 0.8rem;
   }
 }
+
 @media(max-width: 900px) {
   .buttons {
     margin-top: 5%;
   }
 
 }
+
 @media(max-width: 850px) {
-  #telo{
+  #telo {
     height: 2300px;
   }
+
   .footer {
     height: 500px;
   }
@@ -855,21 +868,25 @@ li>a {
 
 @media(max-width: 635px) {
 
-  .poduvod-button-email{
+  .poduvod-button-email {
     padding: 10px 50px;
     height: 70%;
   }
-  .poduvod-button-tel{
+
+  .poduvod-button-tel {
     padding: 10px 50px;
     height: 70%;
     text-align: center;
   }
-  #telo{
+
+  #telo {
     height: 2400px;
   }
-  .buttons{
+
+  .buttons {
     margin-top: 5%;
   }
+
   .footer-main {
     width: 95%;
     margin-left: 2.5%;
@@ -887,68 +904,83 @@ li>a {
     font-size: 0.9rem;
   }
 }
-@media(max-width: 760px){
-  .pozadie-nadpis{
+
+@media(max-width: 760px) {
+  .pozadie-nadpis {
     height: 15%;
   }
-  .uvod-nadpis{
+
+  .uvod-nadpis {
     font-size: 2.5rem;
     text-align: center;
   }
-  .uvod-text{
+
+  .uvod-text {
     font-size: 1.1rem;
     margin-top: 50px;
   }
 
 }
+
 @media(max-width: 590px) {
-  .uvod-text{
+  .uvod-text {
     font-size: 1.1rem;
     margin-top: 20px;
   }
 
 }
+
 @media(max-width: 530px) {
-  .galeria{
+  .galeria {
     height: 63%;
   }
-  .uvod-obsah{
+
+  .uvod-obsah {
     height: 38%;
   }
-  .uvod-text{
+
+  .uvod-text {
     font-size: 1.2rem;
   }
-  .buttons{
+
+  .buttons {
     margin-top: 12%;
   }
-  .poduvod-button-email{
+
+  .poduvod-button-email {
     padding: 10px 15px;
     height: 70%;
     text-align: center;
   }
-  .poduvod-button-tel{
+
+  .poduvod-button-tel {
     padding: 10px 15px;
     height: 70%;
     text-align: center;
   }
 
 }
+
 @media(max-width: 465px) {
-  .pozadie-nadpis{
+  .pozadie-nadpis {
     height: 10%;
   }
-  .uvod-nadpis{
+
+  .uvod-nadpis {
     font-size: 2rem;
   }
-  .uvod-text{
+
+  .uvod-text {
     font-size: 1.1rem;
   }
-  .nav-nadpis{
+
+  .nav-nadpis {
     font-size: 2.5rem;
   }
 
 
 }
+
 @media(max-width: 460px) {
   .footer-tlacidlo {
     width: 40%;
@@ -969,32 +1001,39 @@ li>a {
     margin-left: 1%;
   }
 }
+
 @media(max-width: 390px) {
-  .poduvod-button-email{
+  .poduvod-button-email {
     width: 35%;
   }
-  .poduvod-button-tel{
+
+  .poduvod-button-tel {
     width: 35%;
   }
 }
+
 @media(max-width: 390px) {
-  .buttons{
+  .buttons {
     margin-top: 10%;
   }
-  .poduvod-button-email{
-    padding: 10px 15px;
-    font-size: 0.95rem;
-  
-  }
-  .poduvod-button-tel{
+
+  .poduvod-button-email {
     padding: 10px 15px;
     font-size: 0.95rem;
 
   }
-  .galeria{
+
+  .poduvod-button-tel {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+
+  }
+
+  .galeria {
     height: 62%;
   }
-  .uvod-obsah{
+
+  .uvod-obsah {
     height: 39%;
   }
 }
