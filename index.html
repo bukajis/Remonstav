@@ -337,7 +337,7 @@
           <a href="kontakt/kontakt.html" class="footer-link">Kontakt</a>
           <br>
         </div>
-        <div class="footer-tlacidlo"><button id="footer-citko">Zavolaj nám</button>
+        <div class="footer-tlacidlo"><button id="footer-citko" onclick="callNumber('+123456789')">Zavolaj nám</button>
         </div>
       </div>
   </div>
@@ -369,5 +369,9 @@
 
   setInterval(changeImage, 4000);
 </script>
-
+<script>
+  function callNumber(phoneNumber) {
+    window.location.href = 'tel:' + phoneNumber;
+  }
+</script>
 </html>
