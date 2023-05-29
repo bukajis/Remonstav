@@ -950,7 +950,12 @@ li>a {
   font-family: 'Montserrat', sans-serif;
   margin-top: 50px;
 }
-
+.flexim {
+  width: 40%;
+  display: flex;
+  margin-left: 20%;
+  justify-content: space-between;
+}
 .footer-nav {
   width: 20%;
   margin-left: 20%;
