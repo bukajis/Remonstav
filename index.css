@@ -1018,3 +1018,537 @@ li>a {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 4px;
 }
+/* ZLOMOVÁ SEKCIA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+@media(max-width: 1200px) {
+  .poduvod-nadpis {
+    font-size: 1.65rem;
+  }
+
+  .poduvod-text {
+    font-size: 1.15rem;
+  }
+
+  .poduvod-obrazok {
+    height: 50%;
+    width: 32%;
+    margin-top: 110px;
+  }
+
+  .ponuka-grid {
+    height: 1400px;
+  }
+
+  .ponuka-obsah-nadpis {
+    font-size: 2rem;
+  }
+
+  .ponuka-obsah-text {
+    margin-top: 2%;
+    font-size: 1.1rem;
+  }
+
+  .ponuka {
+    height: 1650px;
+  }
+
+  .footer-info {
+    width: 50%;
+    justify-content: space-between;
+
+  }
+
+  .flexim {
+    width: 49%;
+    margin-left: 1%;
+  }
+
+  .footer-nav {
+    margin-left: 5%;
+    width: 25%;
+
+  }
+
+  .footer-info-adr {
+    margin-left: 0%;
+    width: 40%;
+  }
+
+  .footer-info-tel {
+    width: 55%;
+  }
+}
+
+@media(max-width: 1000px) {
+  .uvod-obsah {
+    margin-left: 10%;
+  }
+
+  .uvod-nadpis {
+    font-size: 5rem;
+  }
+
+  .uvod-podnadpis {
+    height: 70px;
+  }
+
+  .poduvod-inf {
+    width: 40%;
+  }
+
+  .poduvod-nadpis {
+    font-size: 1.55rem;
+  }
+
+  .poduvod-text {
+    font-size: 1.05rem;
+  }
+
+  .poduvod-obrazok {
+    height: 45%;
+    margin-top: 130px;
+  }
+
+  .poduvod-button {
+    width: 50%;
+    font-size: 1rem;
+    padding: 0;
+    height: 50px;
+  }
+
+  .ponuka-uvod {
+    height: 180px;
+  }
+
+  .ponuka-nadpis {
+    font-size: 3rem;
+    height: 90px;
+  }
+
+  .ponuka-podnadpis {
+    font-size: 1.3rem;
+  }
+
+  .ponuka-grid {
+    margin-top: 0px;
+    height: 1300px;
+  }
+
+  .ponuka-obsah-nadpis {
+    font-size: 1.8rem;
+  }
+
+  .ponuka {
+    height: 1500px;
+  }
+
+  .prace-nadpis {
+    font-size: 3rem;
+  }
+
+  .prace-podnadpis {
+    font-size: 1.5rem;
+    margin-top: 0px;
+  }
+
+  .naseprace {
+    height: 800px;
+  }
+
+  .container {
+    width: 400px;
+    height: 550px;
+  }
+
+  .slider {
+    width: 400px;
+  }
+
+  .slide {
+    width: 400px;
+  }
+
+  .nadpis-slide {
+    font-size: 2.5rem;
+
+  }
+
+  .text-slide {
+    font-size: 1.1rem;
+  }
+
+  .footer {
+    height: 300px;
+  }
+
+  .footer-nadpis {
+    font-size: 2.5rem;
+    justify-content: center;
+  }
+
+  .footer-info-adr {
+    margin-top: 20px;
+    font-size: 1.0rem;
+  }
+
+  .footer-info-tel {
+    margin-top: 20px;
+    font-size: 1.0rem;
+  }
+
+  .footer-nav {
+    margin-top: 20px;
+    width: 30%;
+    font-size: 1.0rem;
+  }
+
+  .footer-nav>a {
+    font-size: 1rem;
+  }
+
+  #footer-citko {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .copy-r {
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 850px) {
+  .uvod-obsah {
+    margin-left: 20%;
+  }
+
+  .poduvod {
+    height: 450px;
+  }
+
+  .poduvod-obrazok {
+    height: 37%;
+  }
+
+  .poduvod-inf {
+    width: 50%;
+  }
+
+  .ponuka {
+    height: 1900px;
+  }
+
+  .ponuka-nadpis {
+    font-size: 2.7rem;
+  }
+
+  .ponuka-podnadpis {
+    font-size: 1.2rem;
+  }
+
+  .ponuka-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    height: 1700px;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .ponuka-prvok {
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+  }
+
+  .prace-nadpis {
+    font-size: 2.7rem;
+  }
+
+  .prace-podnadpis {
+    font-size: 1.2rem;
+  }
+
+  .nadpis-slide {
+    font-size: 2.3rem;
+  }
+
+  .prev,
+  .next {
+    padding: 15px;
+    font-size: 17px;
+  }
+
+  .naseprace {
+    height: 775px;
+  }
+
+  .footer {
+    height: 500px;
+  }
+
+  .footer-nadpis {
+    height: 20%;
+  }
+
+  .footer-main {
+    height: 75%;
+
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-info {
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between;
+  }
+
+  .flexim {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+  }
+
+  .footer-tlacidlo {
+    width: 30%;
+  }
+
+  #footer-citko {
+    height: 40%;
+  }
+
+  .footer-nav {
+    width: 40%;
+    margin: 0px;
+  }
+
+  .footer-info-adr {
+    font-size: 1.1rem;
+    text-align: right;
+  }
+
+  .footer-info-tel {
+    font-size: 1.1rem;
+  }
+
+  .footer-nav {
+    font-size: 1.1rem;
+  }
+}
+
+@media(max-width: 760px) {
+  .uvod-nadpis {
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .uvod-podnadpis {
+    width: 100%;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .uvod-obsah {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 20px;
+  }
+
+  .uvod {
+    height: 400px;
+  }
+
+  .wave-image {
+    height: 400px;
+  }
+
+}
+
+@media(max-width: 760px) {
+  .poduvod-obrazok {
+    display: none;
+  }
+
+  .poduvod-inf {
+    width: 70%;
+  }
+
+  .poduvod-nadpis {
+    text-align: center;
+  }
+
+  .poduvod-text {
+    text-align: center;
+  }
+
+  .poduvod-button {
+    margin-left: 25%;
+  }
+
+}
+
+@media(max-width: 600px) {
+  .uvod-nadpis {
+    font-size: 3.5rem;
+  }
+
+  .uvod-podnadpis {
+    font-size: 1.5rem;
+  }
+
+  .ponuka {
+    height: 3700px;
+  }
+
+  .ponuka-grid {
+    height: 3600px;
+    margin-left: 5%;
+    width: 90%;
+    grid-template-columns: 100%;
+    grid-template-rows: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+  }
+
+  .footer-main {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .footer-info-adr {
+    font-size: 0.9rem;
+  }
+
+  .footer-info-tel {
+    font-size: 0.9rem;
+  }
+
+  .footer-nav {
+    font-size: 0.9rem;
+  }
+}
+
+@media(max-width: 460px) {
+  .nav-nadpis {
+    font-size: 2.6rem;
+  }
+
+  .uvod-nadpis {
+    height: 70px;
+  }
+
+  .uvod-podnadpis {
+    font-size: 1.3rem;
+  }
+
+  .ponuka-nadpis {
+    font-size: 2.2rem;
+    height: 70px;
+  }
+
+  .ponuka-podnadpis {
+    font-size: 1.0rem;
+  }
+
+  .prace-nadpis {
+    font-size: 2.2rem;
+    height: 50px;
+  }
+
+  .prace-podnadpis {
+    font-size: 1.0rem;
+    margin-top: 0px;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .container {
+    width: 325px;
+    height: 450px;
+  }
+
+  .slider {
+    width: 325px;
+  }
+
+  .slide {
+    width: 325px;
+  }
+
+  .naseprace {
+    height: 620px;
+  }
+
+  .footer-tlacidlo {
+    width: 40%;
+  }
+}
+
+@media(max-width: 400px) {
+  .uvod-nadpis {
+    font-size: 50px;
+  }
+
+  .uvod-podnadpis {
+    font-size: 1.1rem;
+  }
+
+  .ponuka-uvod {
+    height: 140px;
+  }
+
+  .ponuka-grid {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .ponuka-nadpis {
+    font-size: 2rem;
+  }
+
+  .ponuka-podnadpis {
+    font-size: 0.9rem;
+  }
+
+  .naseprace {
+    height: 580px;
+  }
+
+  .container {
+    width: 300px;
+    height: 400px;
+  }
+
+  .slider {
+    width: 300px;
+  }
+
+  .slide {
+    width: 300px;
+  }
+
+  .nadpis-slide {
+    font-size: 1.8rem;
+  }
+
+  .text-slide {
+    font-size: 1rem;
+  }
+
+  .footer-info-adr {
+    font-size: 0.8rem;
+  }
+
+  .footer-info-tel {
+    font-size: 0.8rem;
+  }
+
+  .footer-main {
+    width: 98%;
+    margin-left: 1%;
+  }
+}
