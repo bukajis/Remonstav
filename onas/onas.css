@@ -712,6 +712,9 @@ li>a {
 }
 
 @media(max-width: 540px) {
+    .nav-nadpis{
+        font-size: 2.5rem;
+    }
     .nadpis-telo {
         font-size: 2.2rem;
         text-align: center;
